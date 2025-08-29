@@ -8,7 +8,7 @@ const apiHash = process.env.CONNECTED_TELEGRAM_ACC_API_HASH;
 const stringSession = new StringSession(process.env.CONNECTED_TELEGRAM_ACC_STRING_SESSION);
 
 // export const daysOfWeek = [1, 3, 5]; // Наприклад, понеділок, середа, п’ятниця
-export const daysOfWeek = [1]; // Наприклад, понеділок, середа, п’ятниця
+export const daysOfWeek = [1, 3, 5]; // Наприклад, понеділок, середа, п’ятниця
 export const randomMode = true; // Перемикач рандомного режиму
 
 export const client = new TelegramClient(

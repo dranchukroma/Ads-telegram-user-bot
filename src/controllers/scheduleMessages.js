@@ -14,10 +14,10 @@ export function scheduleMessages() {
     // Для кожного дня тижня
     daysOfWeek.forEach((day) => {
       // Випадковий час (наприклад, між 10:00 і 20:00)
-      // const hour = Math.floor(Math.random() * 10) + 10;
-      // const minute = Math.floor(Math.random() * 60);
-      const hour = 11;
-      const minute = 37;
+      const hour = Math.floor(Math.random() * 10) + 10;
+      const minute = Math.floor(Math.random() * 60);
+      // const hour = 11;
+      // const minute = 37;
 
       schedule.scheduleJob({ dayOfWeek: day, hour, minute }, async () => {
         for (const group of groups) {
